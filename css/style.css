@@ -317,6 +317,12 @@
         margin-top: 1px;
     }
 
+
+    .jumbotron .content h1 {
+        margin-top: 0;
+        font-size: 1.6rem;
+    }
+
     .rectanglee {
         padding: 20px 10px;
     }
