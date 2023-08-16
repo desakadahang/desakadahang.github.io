@@ -4,10 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Struktur Organisasi</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/lambang-kabupaten.png">
         <style>
             * {
                 padding: 0;
@@ -22,9 +23,20 @@
     </head>
 
     <body id="body">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+
+        <div class="header" id="header">
+            <marquee class="m-2" behavior="" direction="">
+                Kadahang adalah sebuah desa yang terletak di
+                kecamatan
+                Haharu,
+                Kabupaten Sumba Timur, Provinsi Nusa Tenggara Timur, Indonesia
+            </marquee>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="index.html">Desa<span>Kadahang</span></a>
+                <a class="navbar-brand logo" href="index.html"> <img src="img/lambang-kabupaten.png " width="40px"
+                        alt="">
+                    Desa<span>Kadahang</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -34,84 +46,60 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
-
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="dropdown-toggle">Profil Desa</span>
                             </a>
-                            <ul class=" dropdown-menu bg-success ">
-                                <li><a class=" dropdown-item" href="sejarah.html">Sejarah Desa</a>
+                            <ul class="dropdown-menu bg-gradient">
+                                <li><a class=" dropdown-item" href="tentang.html">Tentang Kami</a></li>
+                                <li><a class=" dropdown-item" href="sejarah.html">Sejarah Desa</a></li>
+                                <li><a class="dropdown-item" href="visimisi.html">Visi dan Misi Desa</a></li>
+                                <li><a class="dropdown-item" href="geografis.html">Geografis Desa</a></li>
+                                <li><a class="dropdown-item" href="demografi.html">Demografi Desa</a></li>
+                                <li><a class="dropdown-item" href="monografi.html">Monografi Desa</a></li>
+                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="dropdown-toggle">Pemerintahan</span>
+                            </a>
+                            <ul class="dropdown-menu  bg-gradient">
+                                <li><a class="dropdown-item" href="strukturorganisasi.html">Struktur Organisasi</a>
                                 </li>
-                                <li><a class="dropdown-item" href="geografi.html">Geografi</a></li>
-                                <li><a class="dropdown-item" href="strukturorganisasi.html">Struktur Organisasi</a></li>
-                                <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
-                                <li><a class="dropdown-item" href="#">Produk Unggulan</a></li>
-                            </ul>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="dropdown-toggle">Layanan Pemerintah Desa</span>
-                            </a>
-                            <ul class="dropdown-menu bg-success ">
-                                <li><a class="dropdown-item" href="#">Akta Kelahiran </a></li>
-                                <li><a class="dropdown-item" href="#">Akta Kematian</a></li>
-                                <li><a class="dropdown-item" href="#">Cetak Akta Kelahiran/Akta Kematian</a></li>
-                                <li><a class="dropdown-item" href="#">KTP Elektronik</a></li>
-                                <li><a class="dropdown-item" href="#">Pindah Darang/Keluar</a></li>
-                                <li><a class="dropdown-item" href="#">Cetak Ulang/Akta Kematian</a></li>
-                                <li><a class="dropdown-item" href="#">Cetak Akta Kelahiran/Akta Kematian</a></li>
+                                <li><a class="dropdown-item" href="lembagadesa.html">Lembaga Kemasyarakatan Desa</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="dropdown-toggle">Statistik Desa</span>
+                                <span class="dropdown-toggle">Layanan Pustaka</span>
                             </a>
-                            <ul class="dropdown-menu bg-success ">
-                                <li><a class="dropdown-item" href="#">Data Wilayah Administratif </a></li>
-                                <li><a class="dropdown-item" href="#">Data Pendidikan Dalam KK</a></li>
-                                <li><a class="dropdown-item" href="#">Data Pekerjaan</a></li>
-                                <li><a class="dropdown-item" href="#">Data Pendidikan yang ditempuh</a></li>
-                                <li><a class="dropdown-item" href="#">Data Agama </a></li>
-                                <li><a class="dropdown-item" href="#">Jenis Kelamin</a></li>
-                                <li><a class="dropdown-item" href="#">Data Warga Negara</a></li>
+                            <ul class="dropdown-menu bg-gradient">
+                                <li><a class="dropdown-item" href="apbdes.html">APBDes</a></li>
+                                <li><a class="dropdown-item" href="pertanian.html">Pertanian</a></li>
+                                <li><a class="dropdown-item" href="perikanan.html">Perikanan</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="dropdown-toggle">Data Desa</span>
+                                <span class="dropdown-toggle">Destinasi Wisata</span>
                             </a>
-                            <ul class="dropdown-menu bg-success ">
-                                <li><a class="dropdown-item" href="#">BPD/Badan Permusyawaratan Desa</a></li>
-                                <li><a class="dropdown-item" href="#">PPK/Posyandu</a></li>
-                                <li><a class="dropdown-item" href="#">Karang Taruna</a></li>
-                                <li><a class="dropdown-item" href="#">LPMD</a></li>
-
+                            <ul class="dropdown-menu  bg-gradient">
+                                <li><a class="dropdown-item" href="pantai.html">Pantai Laiwotung</a></li>
+                                <li><a class="dropdown-item" href="danau.html">Danau Waimulung</a></li>
+                                <li><a class="dropdown-item" href="kampung.html">Kampung Tua Mborukullu</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="dropdown-toggle">Info APBDS</span>
-                            </a>
-                            <ul class="dropdown-menu bg-success ">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Info Data Terpadu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pasar Desa</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container-fluid" style="margin-top: 80px;">
-            <h1>Struktur Organisasis Desa</h1>
+        <div class="container-fluid">
+            <h1 class="text-center pt-3">Struktur Organisasi Desa</h1>
+            <hr class="style-eight">
         </div>
         <div class="containerr">
-            <div class="card level-1-1 rectanglee a-1" style="max-width: 540px;">
+            <div class="card level-1 level-1-1 rectanglee a-1" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="img/user.png" class="card-img" alt="...">
@@ -119,20 +107,20 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h4 class="card-title">BPD</h4>
-                            <p class="card-text">Umbu Rawa Hawula.</p>
+                            <h6 class="card-text">Umbu Rawa Hawula.</h6>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card level-1-2 rectanglee" style="max-width: 540px;">
+            <div class="card level-1 level-1-1 rectanglee" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="img/user.png" class="card-img" alt="...">
+                        <img src="img/kepaladesa.jpg" class="card-img" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h4 class="card-title">Kepala Desa</h4>
-                            <p class="card-text">Yulius Ndakajawal</p>
+                            <h6 class="card-text">Yulius Ndakajawal</h6>
                         </div>
                     </div>
                 </div>
@@ -145,66 +133,133 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h4 class="card-title">Sekretaris Desa</h4>
-                            <p class="card-text">Bravo Alfa Janggapeka, A.Md.Kom</p>
+                            <h6 class="card-text">Bravo Alfa Janggapeka, A.Md.Kom</h6>
                         </div>
                     </div>
                 </div>
             </div>
             <ol class="level-2-wrapperr">
                 <li>
-                    <div class="card level-2 rectanglee" style="max-width: 540px;">
+                    <div class="card level-2 level-2-2 rectanglee" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="img/logo.jpg" class="card-img" alt="...">
+                                <img src="img/user.png" class="card-img" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h4 class="card-title">Director A</h4>
-                                    <p class="card-text">Name item for card</p>
+                                    <h4 class="card-title">Kaur Keuangan</h4>
+                                    <h6 class="card-text">Ferdinan Hara Endi</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card level-2 level-2-2 rectanglee" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="img/user.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kasie Pem.</h4>
+                                    <h6 class="card-text">Yohanes K. Lamu, SE</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card level-2 rectanglee" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="img/user.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kepala Dusun Kadahang Timur</h4>
+                                    <h6 class="card-text">Linus Nggimuwali</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <ol class="level-3-wrapperr">
                         <li>
-                            <h3 class="level-3 rectanglee">Manager A</h3>
+                            <div class="card level-3 rectanglee" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <img src="img/user.png" class="card-img" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Ketua RW.001</h4>
+                                        <h6 class="card-text">Markus K. Nuku</h6>
+                                    </div>
+                                </div>
+                            </div>
                             <ol class="level-4-wrapperr">
                                 <li>
-                                    <h4 class="level-4 rectanglee">Person A</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person B</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person C</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person D</h4>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3 class="level-3 rectanglee">Manager B</h3>
-                            <ol class="level-4-wrapperr">
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person A</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person B</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person C</h4>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.001</h5>
+                                                <h6 class="card-text">Apriani Bangu Kahi</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <div class="card level-4 rectanglee" style="max-width: 840px;">
                                         <div class="row no-gutters">
-                                            <img src="img/logo.jpg" class="card-img" alt="..." width="120px"
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
                                                 height="100px">
                                             <div class="card-body">
-                                                <h5 class="card-title">Card Bootstrap 4</h5>
-                                                <p class="card-text">Tutorial cara membuat card vertikal.</p>
-                                                <p class="card-text"><small class="text-muted">Diposting 19 menit
-                                                        lalu</small></p>
+                                                <h5 class="card-title">RT.002</h5>
+                                                <h6 class="card-text">Rina Banja Uru</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <div class="card level-3 rectanglee" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <img src="img/user.png" class="card-img" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Ketua RW.002</h4>
+                                        <h6 class="card-text">Stefanus Tari Kore</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <ol class="level-4-wrapperr">
+                                <li>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.003</h5>
+                                                <h6 class="card-text">Erlis Anamadji</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.004</h5>
+                                                <h6 class="card-text">Dina Tawuru May</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.005</h5>
+                                                <h6 class="card-text">Petrus Pila Ngaddung</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -214,6 +269,32 @@
                     </ol>
                 </li>
                 <li>
+                    <div class="card level-2 level-2-2 rectanglee" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="img/user.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kaur Umum</h4>
+                                    <h6 class="card-text">Samuel Ndakajawal</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card level-2 level-2-2 rectanglee" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="img/user.png" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Kasie Kesra</h4>
+                                    <h6 class="card-text">Umbu Tay Njurumay</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card level-2 rectanglee" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
@@ -221,44 +302,96 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h4 class="card-title">Director B</h4>
-                                    <p class="card-text">Name item for card</p>
+                                    <h4 class="card-title">Kepala Dusun Kadahang Barat</h4>
+                                    <h6 class="card-text">Rawa Langiratu</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <ol class="level-3-wrapperr">
                         <li>
-                            <h3 class="level-3 rectanglee">Manager C</h3>
+                            <div class="card level-3 rectanglee" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <img src="img/user.png" class="card-img" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Ketua RW.003</h4>
+                                        <h6 class="card-text">Porung Ndapatamu</h6>
+                                    </div>
+                                </div>
+                            </div>
                             <ol class="level-4-wrapperr">
                                 <li>
-                                    <h4 class="level-4 rectanglee">Person A</h4>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.006</h5>
+                                                <h6 class="card-text">Hendrik Takandewa</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <h4 class="level-4 rectanglee">Person B</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person C</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person D</h4>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.007</h5>
+                                                <h6 class="card-text">Paulina Kali Kula</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ol>
                         </li>
                         <li>
-                            <h3 class="level-3 rectanglee">Manager D</h3>
+                            <div class="card level-3 rectanglee" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <img src="img/user.png" class="card-img" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Ketua RW.004</h4>
+                                        <h6 class="card-text">Frans Mbay Rongga</h6>
+                                    </div>
+                                </div>
+                            </div>
                             <ol class="level-4-wrapperr">
                                 <li>
-                                    <h4 class="level-4 rectanglee">Person A</h4>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.008</h5>
+                                                <h6 class="card-text">Rinto U. L. Tarapanjang</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <h4 class="level-4 rectanglee">Person B</h4>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.009</h5>
+                                                <h6 class="card-text">Agustina Yaku Danga</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <h4 class="level-4 rectanglee">Person C</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectanglee">Person D</h4>
+                                    <div class="card level-4 rectanglee" style="max-width: 840px;">
+                                        <div class="row no-gutters">
+                                            <img src="img/user.png" class="card-img" alt="..." width="120px"
+                                                height="100px">
+                                            <div class="card-body">
+                                                <h5 class="card-title">RT.010</h5>
+                                                <h6 class="card-text">Serlince Lawa Jati</h6>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ol>
                         </li>
@@ -266,14 +399,26 @@
                 </li>
             </ol>
         </div>
-        <footer class="footer mt-auto py-3 bg-success">
-            <div class="container">
-                <span class="text-light">Copyright &copy Desa Kadahang</span>
+
+        <!-- <iframe
+     src="https://www.google.com/maps/embed?pb=!4v1691226989149!6m8!1m7!1sFMnrH4Ymd5BDZAP-_tsfkg!2m2!1d-9.401285897567925!2d120.025630683076!3f227.55106187266682!4f1.2782337880753971!5f0.7820865974627469"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <div class="container-fluid bg-gradient" id="bottom">
+            <h1 class="text-center p-3">Lokasi Desa Kadahang</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52040.531496102805!2d119.97586283607055!3d-9.422138291120195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4b5b1e5ff959ef%3A0x5a5fcd305bd9b798!2sKadahang%2C%20Kec.%20Haharu%2C%20Kabupaten%20Sumba%20Timur%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1691226310840!5m2!1sid!2sid"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer class="footer mt-auto bg-gradient py-3">
+            <div class="container mt-3">
+                <span class="text-light">Copyright &copy Desa Kadahang dan Mahasiswa KKN Unwina 2023 </span>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+            </script>
     </body>
 
 </html>

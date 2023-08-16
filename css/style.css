@@ -1,15 +1,66 @@
 :root {
+    --level-1: #8dccad;
+    --level-1-1: #ccc88d;
+    --level-1-2: #8db9cc;
+    --level-2: #f5cc7f;
+    --level-3: #7b9fe0;
+    --level-3-1: #5d85d0;
+    --level-3-2: #496fb5;
+    --level-4: #f27c8d;
+    --black: black;
     --primary: #ff7c02;
-    --bg: #010101;
+    --bg: rgb(204, 204, 230);
+    --bg-1: #dae6e9;
+    --navbar: #02343a;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+#header {
+    background-color: var(--navbar);
+    color: white;
+}
+
+#header-accordion {
+    background-color: var(--level-3);
+    color: white;
+}
+
+#header-accordion-0 {
+    background-color: var(--level-3-1);
+    color: white;
+}
+
+#header-accordion-1 {
+    background-color: var(--level-3-2);
+    color: white;
+}
+
+#flush-collapseOne {
+    background-color: var(--bg-1);
+}
+
+#flush-collapseTwo {
+    background-color: var(--bg-1);
+}
+
+#flush-collapseThree {
+    background-color: var(--bg-1);
+}
+
+.navbar,
+.dropdown-menu,
+.footer {
+    background: var(--navbar);
 }
 
 .logo {
-    color: white;
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
 }
-
 
 .logo span {
     color: var(--primary);
@@ -34,9 +85,21 @@
 
 /* jumbotron section */
 .jumbotron {
-    height: auto;
+    max-height: 600px;
     align-items: center;
     background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    background-color: #05646e;
+
+}
+
+#jumbotron-1 {
+    max-height: 600px;
+    align-items: center;
+    background-image: url(../img/IMG-20230717-WA0045.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -58,7 +121,7 @@
 }
 
 .jumbotron .content h1 span {
-    color: rgb(8, 228, 114);
+    color: var(--primary);
 }
 
 .jumbotron .content .cta {
@@ -69,12 +132,56 @@
     color: #fff;
     background-color: var(--primary);
     border-radius: 0.5rem;
-    box-shadow: 1px 1px 3px var(--primary);
+    position: relative;
+    overflow: hidden;
 }
 
-.jumbotron .content .cta:hover {
-    background-color: #e3730a;
-    box-shadow: 1px 1px 3px #e3730a;
+.jumbotron .content .cta::before,
+.cta::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.cta::before {
+    background-color: #131e1f;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.cta::after {
+    content: attr(data-replace);
+    padding: 0.6rem 3rem;
+    font-size: 1.4rem;
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #fbf9f8;
+    background-color: var(--navbar);
+}
+
+.cta:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+.cta:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.cta span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.cta:hover span {
+    transform: translate3d(-200%, 0, 0);
 }
 
 .progress {
@@ -85,22 +192,81 @@
     text-indent: 25px;
 }
 
-:root {
-    --level-1: #8dccad;
-    --level-1-1: #ccc88d;
-    --level-1-2: #8db9cc;
-    --level-2: #f5cc7f;
-    --level-3: #7b9fe0;
-    --level-4: #f27c8d;
-    --black: black;
-}
-
 .rectanglee {
     position: relative;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+img {
+    transition: box-shadow 0.1s, transform 0.5s;
+}
+
+img:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.visi {
+    position: relative;
+}
+
+.visi::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #02343a;
+    bottom: -8px;
+    left: 25%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.visi:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+hr.style-eight {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+hr.style-eight:after {
+    content: 'Kadahang';
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: var(--bg);
+}
+
+#bottom {
+    color: white;
+    background-color: #05646e;
+}
+
+#about {
+    background-color: var(--navbar);
+}
+
+#carouselExampleCaptions {
+    background-color: #a0a09c;
+}
+
+#carouselExampleCaptions img {
+    height: 500px;
+    object-fit: contain;
+}
 
 /* LEVEL-1 STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -121,40 +287,9 @@
     background: var(--black);
 }
 
-.level-1-1 {
-    width: 50%;
-    margin: 0 auto 40px;
-    background: var(--level-1-1);
-}
-
 .level-1-1::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
     height: 40px;
-    background: var(--black);
 }
-
-.level-1-2 {
-    width: 50%;
-    margin: 0 auto 40px;
-    background: var(--level-1-2);
-}
-
-.level-1-2::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 40px;
-    background: var(--black);
-}
-
 
 /* LEVEL-2 STYLES*/
 .level-2-wrapperr {
@@ -214,6 +349,10 @@
     width: 2px;
     height: 20px;
     background: var(--black);
+}
+
+.level-2-2::before {
+    height: 40px;
 }
 
 .level-2::after {
@@ -305,15 +444,11 @@
     background: var(--black);
 }
 
-.containerr ol img {
-    height: 120px;
-}
-
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 700px) {
     .jumbotron .content h1 {
-        margin-top: 0;
+        margin-top: 100px;
         font-size: 1.6rem;
     }
 
@@ -370,5 +505,9 @@
     .containerr ol img {
         height: 100%;
         width: 100%;
+    }
+
+    .jumbotron .content .cta {
+        font-size: 1.0rem;
     }
 }
