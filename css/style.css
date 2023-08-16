@@ -447,9 +447,24 @@ hr.style-eight:after {
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 700px) {
+
+    /* jumbotron section */
+    .jumbotron {
+        max-height: 400px;
+    }
+
+    #jumbotron-1 {
+        max-height: 400px;
+    }
+
     .jumbotron .content h1 {
-        margin-top: 100px;
-        font-size: 1.6rem;
+        margin-top: 130px;
+        font-size: 1.0rem;
+    }
+
+    .cta::after {
+        padding: 0.5rem 3rem;
+        font-size: 1.0rem;
     }
 
     .rectanglee {
