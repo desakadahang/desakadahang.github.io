@@ -250,6 +250,7 @@ hr.style-eight:after {
     background: var(--bg);
 }
 
+
 #bottom {
     color: white;
     background-color: #05646e;
@@ -447,8 +448,6 @@ hr.style-eight:after {
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 700px) {
-
-    /* jumbotron section */
     .jumbotron {
         max-height: 400px;
     }
@@ -469,6 +468,14 @@ hr.style-eight:after {
 
     .rectanglee {
         padding: 20px 10px;
+    }
+
+    hr.style-eight:after {
+        font-size: 0.8rem;
+    }
+
+    .text-indent-25 {
+        text-indent: 0px;
     }
 
     .level-1,
